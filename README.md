@@ -8,10 +8,10 @@ Notes:<br/>
 - Consider implemeting a Service Control Policy (SCP) to disallow linked accounts from resetting IAM Password Policies.<br/>
 
 ## Environment
-The Lambda function has no external dependencies other than Python 3.9 and Boto3, which is the AWS Python SDK. The Lambda function requires access to action (iam:UpdateAccountPasswordPolicy) to run. The suggested timeout is 10 seconds.<br/>
+The Lambda function has no external dependencies other than Python 3.9 and Boto3, which is the AWS SDK for Python. The Lambda function requires access to action (iam:UpdateAccountPasswordPolicy) to run. The suggested timeout is 10 seconds.<br/>
 
 ## Deployment
-You can deployed the Lambda function using AWS CloudFormation (check cloudformation.yml file). Also, you can use AWS CloudFormation StackSets to update the password policy across multiple accounts or the entire AWS Organization.<br/>
+You can deploy the Lambda function using AWS CloudFormation (check cloudformation.yml file). Also, you can use AWS CloudFormation StackSets to update the password policy across multiple accounts or the entire AWS Organization.<br/>
 
 ## Governance
 Once the IAM Passowrd Policies across your linked accounts are updated according to your organization standard, you can implement a Service control policy (see example below) to deny further access to the action,  IAM:UpdateAccountPasswordPolicy. Note that Service control policies don't affect users or roles in the management account. <br/>
