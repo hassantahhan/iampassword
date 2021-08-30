@@ -14,7 +14,7 @@ The Lambda function has no external dependencies other than Python 3.9 and Boto3
 You can deploy the Lambda function using AWS CloudFormation (check cloudformation.yml file). Also, you can use AWS CloudFormation StackSets to update the password policy across multiple accounts or the entire AWS Organization.<br/>
 
 ## Governance
-Once the IAM Passowrd Policies across your linked accounts are updated according to your organization standard, you can implement a Service control policy (see example below) to deny further access to the action,  IAM:UpdateAccountPasswordPolicy. Note that Service control policies don't affect users or roles in the management account. <br/>
+Once the IAM Passowrd Policies across your linked accounts are updated according to your organization standard, you can implement a Service Control Policy (see the example below) to deny further access to the action,  IAM:UpdateAccountPasswordPolicy. Note that Service Control Policies don't affect users or roles in the management account. <br/>
 ```
 {
   "Version": "2012-10-17",
