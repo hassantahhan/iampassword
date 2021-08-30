@@ -20,7 +20,7 @@ Once the IAM Passowrd Policies across your linked accounts are updated according
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "Statement1",
+      "Sid": "DenyUpdateAccountPasswordPolicy",
       "Effect": "Deny",
       "Action": "iam:UpdateAccountPasswordPolicy",
       "Resource": "*"
