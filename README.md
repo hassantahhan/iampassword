@@ -5,7 +5,7 @@ https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-f
 Notes:<br/>
 - AWS highly recommends as a best practice that instead of creating IAM users to use federation, via AWS SSO.<br/>
 - This solution sets the minimum requirements to pass AWS Security Hub checks - set other parameters as required.<br/>
-- Consider implemeting a Service control Policy to disallow linked accounts from resetting IAM Password Policies.<br/>
+- Consider implemeting a Service Control Policy (SCP) to disallow linked accounts from resetting IAM Password Policies.<br/>
 
 ## Environment
 The Lambda function has no external dependencies other than Python 3.9 and Boto3, which is the AWS Python SDK. The Lambda function requires access to action (iam:UpdateAccountPasswordPolicy) to run. The suggested timeout is 10 seconds.<br/>
