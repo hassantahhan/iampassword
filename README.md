@@ -1,11 +1,11 @@
 ## Overview
-Reset IAM Password Policy for all your AWS accounts according to AWS Foundational Security Best Practices standard, which states that "Password policies for IAM users should have strong configurations".<br/>
+Set IAM Password Policy for all your AWS accounts according to AWS Foundational Security Best Practices standard, which states that "password policies for IAM users should have strong configurations".<br/>
 https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-iam-7<br/>
 
 Notes:<br/>
-1- AWS highly recommends that instead of creating IAM users to you use IAM federation, as a best practice.<br/>
-2- The function sets minimum requirements to pass Security Hub check, change default values as required.<br/>
-3- Consider implemeting a Service control Policy to disallow linked accounts from resetting IAM Password Policies.<br/>
+- AWS highly recommends that instead of creating IAM users to you use IAM federation, as a best practice.<br/>
+- The function sets minimum requirements to pass Security Hub check, change default values as required.<br/>
+- Consider implemeting a Service control Policy to disallow linked accounts from resetting IAM Password Policies.<br/>
 
 ## Environment
 The Lambda function has no external dependencies other than Python 3.9 and Boto3, which is the AWS Python SDK. The Lambda function requires access to action (iam:UpdateAccountPasswordPolicy) to run. The suggested timeout is 10 seconds.<br/>
