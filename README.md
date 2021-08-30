@@ -2,7 +2,7 @@
 Reset IAM Password Policy for all your AWS accounts according to AWS Foundational Security Best Practices Standard. https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-iam-7
 
 Notes:
-1- AWS highly recommends that instead of creating IAM users to you use federation, as a best practice.
+1- AWS highly recommends that instead of creating IAM users to you use federation, as a best practice.<br/>
 2- The function sets minimum requirements to pass Security Hub check, change default values as required..<br/>
 
 ## Environment
