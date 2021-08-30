@@ -3,8 +3,8 @@ Set IAM Password Policy for all your AWS accounts according to AWS Foundational 
 https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-iam-7<br/>
 
 Notes:<br/>
-- AWS highly recommends that instead of creating IAM users to you use IAM federation, as a best practice.<br/>
-- The function sets minimum requirements to pass Security Hub check, change default values as required.<br/>
+- AWS highly recommends as a best practice that instead of creating IAM users to use federation, via AWS SSO.<br/>
+- This solution sets the minimum requirements to pass AWS Security Hub checks - set other parameters as required.<br/>
 - Consider implemeting a Service control Policy to disallow linked accounts from resetting IAM Password Policies.<br/>
 
 ## Environment
