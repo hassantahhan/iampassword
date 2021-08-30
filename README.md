@@ -15,7 +15,7 @@ You can deployed the Lambda function using AWS CloudFormation (check cloudformat
 
 ## Governance
 Once the IAM Passowrd Policies across your linked accounts are updated according to your organization standard, you can implement a Service control policy (see example below) to deny further access to the action,  IAM:UpdateAccountPasswordPolicy. Note that Service control policies don't affect users or roles in the management account. <br/>
-
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -27,7 +27,7 @@ Once the IAM Passowrd Policies across your linked accounts are updated according
     }
   ]
 }
-
+```
 ## Testing
 The core logic (other than the handler method) can be tested locally without the need for Lambda deployment. I provided two files (test.py and requirements.txt) to help you install and run the code locally. You still need to have your AWS access credentials in .aws\credentials for the test script to work. <br/>
 
