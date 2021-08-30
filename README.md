@@ -34,4 +34,4 @@ The core logic (other than the handler method) can be tested locally without the
 If you like to activly monitor your IAM user permissions for the IAM action, UpdateAccountPasswordPolicy, consider using the IAM Canary concept publish earlier on github. <br/> https://github.com/hassantahhan/iamcanary <br/>
 
 ## Cost
-The total cost of the Lambda function is estimated to be 0 USD/month.
+The total cost of the Lambda function is estimated to be $0.0 USD/month/account.
