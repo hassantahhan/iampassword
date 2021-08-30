@@ -9,7 +9,7 @@ Notes:<br/>
 The Lambda function has no external dependencies other than Python 3.9 and Boto3, which is the AWS Python SDK. The Lambda function requires access to action (iam:UpdateAccountPasswordPolicy) to run. The suggested timeout is 10 seconds.<br/>
 
 ## Deployment
-You can deployed the Lambda function using AWS CloudFormation (check cloudformation.yml file). Also, you can use AWS CloudFormation StackSets to update the password policy across multiple accounts.<br/>
+You can deployed the Lambda function using AWS CloudFormation (check cloudformation.yml file). Also, you can use AWS CloudFormation StackSets to update the password policy across multiple accounts or the entire AWS Organization.<br/>
 
 ## Testing
 The core logic (other than the handler method) can be tested locally without the need for Lambda deployment. I provided two files (test.py and requirements.txt) to help you install and run the code locally. You still need to have your AWS access credentials in .aws\credentials for the test script to work. <br/>
