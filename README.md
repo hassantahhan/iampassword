@@ -31,5 +31,7 @@ Once the IAM Passowrd Policies across your linked accounts are updated according
 ## Testing
 The core logic (other than the handler method) can be tested locally without the need for Lambda deployment. I provided two files (test.py and requirements.txt) to help you install and run the code locally. You still need to have your AWS access credentials in .aws\credentials for the test script to work. <br/>
 
+If you like to activly monitor your user access permissions pertaining to UpdateAccountPasswordPolicy, consider making use of the IAM Canary conept I publish on github. <br/> https://github.com/hassantahhan/iamcanary <br/>
+
 ## Cost
 The total cost of the Lambda function is estimated to be 0 USD/month.
